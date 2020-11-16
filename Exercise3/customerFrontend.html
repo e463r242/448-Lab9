@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <script src="formerChecker.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<h2><u>Recinos Sports Store</u></h2>
+
+<form action="customerBackend.php" id="shop" method="post" onsubmit="check()">
+
+Email<br><input name="email"></input><br>
+Password<br><input id="password" type="text" min="1"></input>
+
+
+<h3>Select amount of each item is desired</h3>
+
+Soccer Ball: $18.99<t><br><input type="number" class="amount" value="0" min="0" id="SoccerBall" name="SoccerBall"></input><br>
+
+Basketball: $25.99<t><br><input type="number" class="amount" value="0" min="0" id="BasketBall" name="BasketBall"></input><br>
+
+Volleyball: $16.99<t><br><input type="number" class="amount" value="0" min="0" id="VolleyBall" name="VolleyBall"></input><br>
+
+
+
+
+
+
+<p>Shopping Options:</p>
+<input type="radio" name="shipping" value="7"> Free 7 day <br>
+<input type="radio" name="shipping" value="50"> $50.00 over night<br>
+<input type="radio" name="shipping" value="5"> $5.00 three day<br><br>
+
+<!--Hint from pdf to give Javascript the ability to stop submission, use the event onsubmit-->
+<input type="button" value="Submit" onclick="check()">
+<input type="reset" value="Reset">
+
+</form>
+
+</body>
+
+</html>
